@@ -11,7 +11,7 @@ In `Python 3.3`, you can use Python’s built-in `venv` module to create a virtu
 
 The `virtualenv package` can be installed in Python 3, so it’s up to you which you want to use.
 
-### Creating virtual environments
+### Creating Virtual Environment
 
 Python 3 come with virtual environment package name `venv`.
 
