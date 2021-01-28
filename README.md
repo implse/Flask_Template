@@ -21,7 +21,7 @@ Python 3 come with virtual environment package name `venv`.
 
 3 - Install `venv`
 
-- on Windows : `py -3 -m venv venv`
+- on Windows : `python3 -m venv venv`
 
 - on MacOs :  `python3 -m venv venv`
 
@@ -51,8 +51,7 @@ To install Flask into the virtual environment, make sure the `venv` virtual envi
 
   When you execute this command, pip will install Flask and all of its dependencies.
 
-  You can check what packages are installed in the virtual environment
-at any time using the pip freeze command:
+  You can check what packages are installed in the virtual environment at any time using the pip freeze command:
 
   `pip freeze`
 
@@ -64,10 +63,12 @@ contains the application instance in the FLASK_APP environment variable.
 
 - on Windows :
 
-  `set FLASK_APP=hello.py FLASK_ENV=development`
+  `set FLASK_APP=project_name.py FLASK_ENV=development`
+
   `flask run`
 
 - on MacOs :
 
-  `export FLASK_APP=hello.py FLASK_ENV=development`
+  `export FLASK_APP=project_name.py FLASK_ENV=development`
+
   `flask run`
