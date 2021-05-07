@@ -21,9 +21,9 @@ Python 3 come with virtual environment package name `venv`.
 
 3 - Install `venv`
 
-- on Windows : `python3 -m venv venv`
+- on Windows : `python3 -m venv env`
 
-- on MacOs :  `python3 -m venv venv`
+- on MacOs :  `python3 -m venv env`
 
 The  `-m venv` option runs the `venv` package from the standard library as a standalone script, passing the desired name as an argument.
 
@@ -31,17 +31,17 @@ The  `-m venv` option runs the `venv` package from the standard library as a sta
 
 When you want to start using a virtual environment, you have to “activate” it
 
-1 - Activate `venv` :
+1 - Activate `env` :
 
-- on Windows : `venv\Scripts\activate`
+- on Windows : `env\Scripts\activate`
 
-- on MacOs : `source venv/bin/activate`
+- on MacOs : `source env/bin/activate`
 
-2 - De-Activate `venv` :
+2 - De-Activate `env` :
 
-- on Windows : `venv\Scripts\deactivate`
+- on Windows : `env\Scripts\deactivate`
 
-- on MacOs : `source venv/bin/deactivate`
+- on MacOs : `source env/bin/deactivate`
 
 ### Installing Python Packages with pip
 
@@ -63,12 +63,16 @@ contains the application instance in the FLASK_APP environment variable.
 
 - on Windows :
 
-  `set FLASK_APP=project_name.py FLASK_ENV=development`
+  `set FLASK_APP=project_name.py`
+
+  `set FLASK_ENV=development`
 
   `flask run`
 
 - on MacOs :
 
-  `export FLASK_APP=project_name.py FLASK_ENV=development`
+  `export FLASK_APP=project_name.py`
+  
+  `export FLASK_ENV=development`
 
   `flask run`
